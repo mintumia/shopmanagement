@@ -24,7 +24,7 @@ $role->givePermissionTo($permission);*/
       auth()->user(2)->givePermissionTo($permission);*/
 
 
-
+echo "Hello from Homes!";
 
     }
     //

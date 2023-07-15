@@ -28,4 +28,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('test',[MintuHomeTest::class,"home"])->name("home");
+Route::get('test',[MintuHomeTest::class,"home"])->name("home")->middleware('permission:update article');
