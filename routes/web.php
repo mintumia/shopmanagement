@@ -13,6 +13,8 @@ use App\Http\Controllers\MintuHomeTest;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+/******Git command**********/
+/*git remote set-url git@github.com:mintumia/shopmanagement.git*/
 
 Route::get('/', function () {
     return view('layouts.common.app');
