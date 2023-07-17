@@ -15,7 +15,7 @@ use App\Http\Controllers\MintuHomeTest;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.common.app');
 });
 
 Route::middleware([
@@ -28,4 +28,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('test',[MintuHomeTest::class,"home"])->name("home")->middleware('permission:update article');
+//Route::get('test',[MintuHomeTest::class,"home"])->name("home")->middleware('permission:update article');
