@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
+use Carbon\Carbon;
+use Carbon\Traits;
 
 class MintuHomeTest extends Controller
 {
@@ -24,8 +26,20 @@ $role->givePermissionTo($permission);*/
       auth()->user(2)->givePermissionTo($permission);*/
 
 
-echo "Hello from Homes!";
+echo "Hello from Homes! ".Carbon::now();
+
+
+
+
 
     }
+
+    public function testlivewire(){
+
+
+        return view('layouts.livetest');
+    }
+
+
     //
 }

@@ -30,4 +30,5 @@ Route::middleware([
     })->name('dashboard');
 });
 
-//Route::get('test',[MintuHomeTest::class,"home"])->name("home")->middleware('permission:update article');
+Route::get('test',[MintuHomeTest::class,"home"])->name("home");//->middleware('permission:update article');
+Route::get('livetest',[MintuHomeTest::class,"testlivewire"])->name("livetest");
