@@ -1,10 +1,10 @@
 <div style = "text-align: center">
 
-    <h2>From Othertest</h2>
+    <div>Hellow from Othertest Component!</div>
     <br>
     {{-- Success is as dangerous as failure. --}}
-    <button wire:click="increment">+</button>
+    <button class="btn-success" wire:click="increment">+</button>
     <h1>{{$text}}</h1>
-    <button wire:click="decrement">-</button>
+    <button class="btn-success" wire:click="decrement">-</button>
 
 </div>
