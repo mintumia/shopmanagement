@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New Page</title>
     <link rel="stylesheet" href="{{asset('plugins')}}/plugins/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('plugins')}}/tailwindcss/main.css">
     @livewireStyles
 </head>
-<body>
+<body class="container">
 
-
+<h1 class="bg-red-400 text-purple-900">This is tailwind styles.!</h1>
 
 {{--@livewire('counter')--}}
-@livewire('othertest')
+{{--@livewire('othertest')--}}
 
 
 
