@@ -34,7 +34,23 @@ echo "Hello from Homes! ".Carbon::now();
 
     }
 
-    public function testlivewire(){
+    public function testlivewire(Request $request ){
+    if (!empty($request->post('comments'))){
+        echo "<pre>";
+        print_r($request->all());
+
+    }
+
+
+        return view('layouts.livetest');
+    }
+
+    public function formstore(Request $request ){
+        if (!empty($request->post('comments'))){
+            /*echo "<pre>";
+            print_r($request->all());*/
+
+        }
 
 
         return view('layouts.livetest');

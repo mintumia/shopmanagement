@@ -32,3 +32,4 @@ Route::middleware([
 
 Route::get('test',[MintuHomeTest::class,"home"])->name("home");//->middleware('permission:update article');
 Route::get('livetest',[MintuHomeTest::class,"testlivewire"])->name("livetest");
+Route::post('livetest',[MintuHomeTest::class,"formstore"])->name("livetest");
